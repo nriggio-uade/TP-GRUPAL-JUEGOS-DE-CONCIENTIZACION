@@ -1,0 +1,487 @@
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    position: relative;
+    min-height: 91.5vh;
+    padding-bottom: 50px; /*El alto del footer*/
+}
+
+nav {
+  background: rgb(14,132,0);
+  background: linear-gradient(90deg, rgba(14,132,0,1) 0%, rgba(19,186,55,1) 58%, rgba(97,233,126,1) 100%);
+  color: #fff;
+  font-weight: 600;
+  padding: 30px 0;
+  }
+  
+  nav ul { /*Muestra la disposicin de botones para notebook o desktop*/
+    display: flex; 
+    justify-content: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+  }
+  
+  nav li a {  /*Determina la propiedad del texto del botón*/ 
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+  }
+  
+  nav li a:hover { /*Determina la propiedad al posicionarse en el botón*/
+    color: #084301;
+    background-color: #fff;
+    transition: all .38s ease;
+    border-radius: 50px;
+  }
+  
+  nav label { /*No muestra el valor de la etiqueta ☰*/
+    display: none;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .contenedor{
+    display: flex;
+    margin-top: 20px;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    }
+
+    .contenedor2{
+      display: flex;
+      margin-top: 20px;
+      max-width: 100%;
+      margin: auto;
+      padding: 20px;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+      }
+
+  .textodescrip{
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 18px;
+    justify-self: center;
+}
+
+  .button{
+    background-color: #0e8400;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+
+  .button a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .button:hover{
+      background-color: #084301;
+      transition: all .38s ease;
+    }
+  
+    /* Flip-Box*/
+    .flip-box {
+      background-color: transparent;
+      width: 300px;
+      height: 200px;
+      perspective: 1000px;
+      margin: 5px;
+    }
+
+    /* Flip-Box 1*/
+    .flip-box-inner1{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+     }
+    
+    .flip-box:hover .flip-box-inner1 {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-box-front1, .flip-box-back1 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 15px; 
+    }
+    
+    .flip-box-front1 {
+      background-image: url(img/Flipbox/EcoImg.png);
+      color: White;
+      text-align: center;
+      align-content: center;
+    }
+    
+    .flip-box-back1 {
+      background: rgb(14,132,0);
+      background: linear-gradient(90deg, rgba(14,132,0,1) 0%, rgba(19,186,55,1) 58%, rgba(97,233,126,1) 100%);   
+      color: #fff;
+      color: white;
+      transform: rotateY(180deg);
+      text-align: center;
+      align-content: center;
+    }
+    .flip-box-back1 p{
+      font-size: 15px;
+      font-weight: 300;
+      padding: 10px;
+    }
+/*Flipbox 2*/
+    .flip-box-inner2{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+     }
+    
+    .flip-box:hover .flip-box-inner2 {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-box-front2, .flip-box-back2 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 15px; 
+    }
+    
+    .flip-box-front2 {
+      background-image: url(img/Flipbox/EcoImg.png);
+      color: White;
+      text-align: center;
+      align-content: center;
+    }
+    
+    .flip-box-back2 {
+      background: rgb(1,83,125);
+      background: linear-gradient(90deg, rgba(1,83,125,1) 0%, rgba(56,149,196,1) 39%, rgba(128,203,241,1) 100%);
+      color: #fff;
+      color: white;
+      transform: rotateY(180deg);
+      text-align: center;
+      align-content: center;
+    }
+    .flip-box-back2 p{
+      font-size: 15px;
+      font-weight: 300;
+      padding: 10px;
+    }
+
+    /*Flipbox 3*/
+    .flip-box-inner3{
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    
+    .flip-box:hover .flip-box-inner3 {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-box-front3, .flip-box-back3 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      border-radius: 15px;
+    }
+    
+    .flip-box-front3 {
+      background-image: url(img/Flipbox/EcoImg.png);
+      color: White;
+      text-align: center;
+      align-content: center;
+    }
+    
+    .flip-box-back3 {
+      background: rgb(255,0,0);
+      background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(217,101,0,1) 39%, rgba(241,191,54,1) 100%);
+      color: #fff;
+      color: white;
+      transform: rotateY(180deg);
+      text-align: center;
+      align-content: center;
+    }
+    .flip-box-back3 p{
+      font-size: 15px;
+      font-weight: 300;
+      padding: 10px;
+    }
+
+  /* NOSOTROS - TEAM */
+  
+  .team{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .team-contenido{
+    width: 100%;
+    max-width: 1240px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+  }
+  .team-contenido img{
+    width: 100%;
+    border-radius: 10px;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .box{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    background: rgb(14,132,0);
+    background: linear-gradient(90deg, rgba(14,132,0,1) 0%, rgba(19,186,55,1) 58%, rgba(97,233,126,1) 100%);
+    transition: all .38s ease;
+  }
+  .box h3{
+    font-size: 18 px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  .box h5{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+  }
+
+  .box:hover{
+    transform: translateY(-10px);
+  }
+  
+/*CONTACTO - FORM*/
+
+form{
+  width: 600px;
+  margin: auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+input, textarea {
+width: 100%;
+margin-bottom:20px;
+box-sizing: border-box;
+}
+
+textarea{
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+  box-sizing: border-box;  
+}
+
+/*CATÁLOGO*/
+
+.container-img{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 250px;
+  grid-gap: 30px;
+}
+
+.container-img .box-img a{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d1476;
+  }
+
+.container-img .box-img figure{
+  max-width: 200px;
+  height: 100%;
+  text-align: center;
+ }
+
+.container-img .box-img figure:hover{
+  transition: all .38s ease;
+  transform: translateY(-10px);
+  opacity: 0.6;
+}
+
+.container-img .box-img img{
+  width: 200px;
+  height: 200px;
+}
+
+/*FOOTER*/
+
+footer{
+  background: rgb(14,132,0);
+  background: linear-gradient(90deg, rgba(14,132,0,1) 0%, rgba(19,186,55,1) 58%, rgba(97,233,126,1) 100%);
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+  color: #fff;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+}
+
+/* <--------------------------------------RESPONSIVE-------------------------------------->*/
+
+  @media (max-width: 768px) {/*cuando el dispositivo es máximo es de 768px*/
+    
+    /*MENÚ*/
+
+      input:checked ~ ul{ /*muestra el contenido de todas las etiquetas ul*/
+       display: block;
+      }
+      
+      input:checked ~ label { /*muestra todo el contenido de las etiquetas label*/
+       background: #084301;
+      }
+      
+      nav li{ /*Determina la propiedad de cada botón para mobile*/
+       margin: 0;
+       text-align: left;
+      }
+      
+      nav label{ /*dibuja la etiqueta label ☰*/
+       box-sizing: border-box;
+       display: flex;
+       /*border-radius: 5px;*/
+       width: 30px;
+       height: 30px;
+       line-height: 30px;
+       font-weight: bold;
+       text-align: center;
+       justify-content: center;
+       user-select: none;
+       /*background-color: cadetblue;*/
+      }
+      
+      nav ul{/*deja de mostrar el bloque contenedor de botones horizontales*/
+        display: none;
+      }
+      
+      nav ul li a{ /**/
+       display: flex;
+       text-decoration: none;
+       color: #fff;
+      }
+      
+      .contenedor{
+       display: block;
+       margin-top: 20px;
+       width: 90%;
+       margin: auto;
+       }
+
+       .contenedor2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        max-width: 100%;
+        margin: auto;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        }
+      
+       /*HOME*/
+
+      .imglogo{ /*logo del home responsive*/
+       text-align: center;
+       }
+      
+      .textodescrip{
+        font-size: 22px;
+        text-align: justify;
+        margin: 5px;
+       }
+      
+      .textodescrip button{
+        background-color: #084301;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        }
+      
+      /*NOSOTROS*/
+
+      .team{
+        width: 90%;
+        height: auto;
+        padding: 90px 2%;
+
+        }
+
+        .team-contenido{
+          display: flex;
+          flex-direction: column;
+        }
+
+    /*CONTACTO RESPONSIVO*/
+
+    form{
+      width: 100%;
+    }
+
+    /*CATÁLOGO*/
+
+    .container-img{
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center; 
+    }
+
+    .container-img .box-img figure{
+      height: 200px;
+        
+    }
+}
+      
