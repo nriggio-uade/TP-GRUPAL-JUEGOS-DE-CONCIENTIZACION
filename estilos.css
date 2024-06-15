@@ -1,9 +1,17 @@
-body{
+html, body {
+  height: 100%; /* Asegura que el html y body tomen todo el alto */
+  margin: 0; /* Elimina márgenes predeterminados */
+  padding: 0; /* Elimina rellenos predeterminados */
+  display: flex;
+  flex-direction: column; /* Orienta los hijos (como el footer) en columna */
+}
+
+body {
   font-family: sans-serif;
-  margin: 0;
   position: relative;
-  min-height: 91.5vh;
-  padding-bottom: 50px; /*El alto del footer*/
+  min-height: 100vh; /* Usa vh (viewport height) para cubrir toda la altura de la ventana */
+  display: flex;
+  flex-direction: column;
 }
 
 /* UADE INICIO */
@@ -168,6 +176,67 @@ nav label { /*No muestra el valor de la etiqueta ☰*/
   color: white; /* Para que el texto sea legible sobre el fondo */
   position: relative; /* Añadido para el overlay */
 }
+
+
+.contenedor-avances{
+  margin-top: 0; /* Elimina el margen superior para reducir el espacio */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  padding: 40px 20px;
+  background: url('img/Flipbox/Sequia.jpg') no-repeat center center;
+  background-size: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  position: relative;
+}
+
+.contenedor-avances::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  backdrop-filter: blur(10px); /* Desenfoque del fondo */
+  border-radius: 20px; /* Coincide con el borde del contenedor */
+  z-index: 1; /* Asegura que el overlay esté por debajo del contenido */
+}
+
+.contenedor-integrantes{
+  margin-top: 0; /* Elimina el margen superior para reducir el espacio */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  padding: 40px 20px;
+  background: url('img/Flipbox/Derretimiento.png') no-repeat center center;
+  background-size: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: white;
+  position: relative;
+}
+
+.contenedor-integrantes::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+  backdrop-filter: blur(10px); /* Desenfoque del fondo */
+  border-radius: 20px; /* Coincide con el borde del contenedor */
+  z-index: 1; /* Asegura que el overlay esté por debajo del contenido */
+}
+
+
 .contenedor{
   display: flex;
   margin-top: 20px;
@@ -210,6 +279,26 @@ nav label { /*No muestra el valor de la etiqueta ☰*/
     }
 
 .textodescrip {
+  font-size: 24px; /* Tamaño de fuente aumentado para mayor visibilidad */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Espaciado debajo del texto */
+  position: relative; /* Asegura que esté por encima del overlay */
+  z-index: 2; /* Asegura que esté por encima del overlay */
+}
+
+.textodescrip-avances {
+  font-size: 24px; /* Tamaño de fuente aumentado para mayor visibilidad */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Espaciado debajo del texto */
+  position: relative; /* Asegura que esté por encima del overlay */
+  z-index: 2; /* Asegura que esté por encima del overlay */
+}
+
+.textodescrip-integrantes {
   font-size: 24px; /* Tamaño de fuente aumentado para mayor visibilidad */
   background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para el texto */
   padding: 20px;
@@ -512,19 +601,28 @@ width: 200px;
 height: 200px;
 }
 
-/*FOOTER*/
+/* FOOTER */
 
-footer{
-background: rgb(14,132,0);
-background: linear-gradient(90deg, rgba(14,132,0,1) 0%, rgba(19,186,55,1) 58%, rgba(97,233,126,1) 100%);
-width: 100%;
-font-size: 14px;
-text-align: center;
-color: #fff;
-height: 50px;
-position: absolute;
-bottom: 0;
+footer {
+  background: #0e8400; /* Color de fondo, ajusta al que prefieras */
+  color: white; /* Color de texto */
+  text-align: center; /* Alineación del texto */
+  padding: 20px 0; /* Espaciado superior e inferior para darle más espacio */
+  font-size: 16px; /* Tamaño de fuente */
+  border-top: 5px solid #fff; /* Una línea superior para decoración */
+  width: 100%; /* Asegura que el footer ocupe todo el ancho */
+  box-sizing: border-box; /* Incluye padding y border en el ancho total */
+  position: absolute;
+  bottom: 0; /* Asegura que el footer se mantenga al fondo */
+  left: 0;
 }
+
+footer p {
+  margin: 0; /* Elimina el margen por defecto del párrafo */
+  line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+}
+
+/* FOOTER */
 
 /* <--------------------------------------RESPONSIVE-------------------------------------->*/
 
