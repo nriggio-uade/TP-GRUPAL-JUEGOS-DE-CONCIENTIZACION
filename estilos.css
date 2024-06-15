@@ -276,15 +276,15 @@ nav label { /*No muestra el valor de la etiqueta ☰*/
   }
   
   .flip-box-front1 {
-    background-image: url(img/Flipbox/EcoImg.png);
+    background-image: url(img/Flipbox/Sequia.jpg);
     color: White;
     text-align: center;
     align-content: center;
   }
   
   .flip-box-back1 {
-    background: rgb(14,132,0);
-    background: linear-gradient(90deg, rgba(14,132,0,1) 0%, rgba(19,186,55,1) 58%, rgba(97,233,126,1) 100%);   
+    background: rgb(177,91,29);
+background: linear-gradient(90deg, rgba(177,91,29,1) 0%, rgba(204,120,60,1) 58%, rgba(233,164,115,1) 100%);   
     color: #fff;
     color: white;
     transform: rotateY(180deg);
@@ -320,7 +320,7 @@ nav label { /*No muestra el valor de la etiqueta ☰*/
   }
   
   .flip-box-front2 {
-    background-image: url(img/Flipbox/EcoImg.png);
+    background-image: url(img/Flipbox/Derretimiento.png);
     color: White;
     text-align: center;
     align-content: center;
@@ -365,7 +365,7 @@ nav label { /*No muestra el valor de la etiqueta ☰*/
   }
   
   .flip-box-front3 {
-    background-image: url(img/Flipbox/EcoImg.png);
+    background-image: url(img/Flipbox/biodiversidad.jpg);
     color: White;
     text-align: center;
     align-content: center;
@@ -595,6 +595,12 @@ bottom: 0;
      }
     
     .textodescrip{
+      font-size: 22px;
+      text-align: justify;
+      margin: 5px;
+     }
+
+     .textodescripava{
       font-size: 22px;
       text-align: justify;
       margin: 5px;
