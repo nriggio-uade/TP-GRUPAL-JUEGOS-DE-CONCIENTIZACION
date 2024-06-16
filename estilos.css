@@ -522,8 +522,8 @@ background: linear-gradient(90deg, rgba(177,91,29,1) 0%, rgba(204,120,60,1) 58%,
   }
   
   .flip-box-back3 {
-    background: rgb(3,145,12);
-    background: linear-gradient(90deg, rgba(3,145,12,1) 0%, rgba(191,196,106,1) 46%, rgba(204,120,60,1) 100%);
+    background: rgb(208,34,0);
+    background: linear-gradient(90deg, rgba(208,34,0,1) 0%, rgba(254,136,51,1) 46%, rgba(252,207,82,1) 100%);
     color: #fff;
     color: white;
     transform: rotateY(180deg);
