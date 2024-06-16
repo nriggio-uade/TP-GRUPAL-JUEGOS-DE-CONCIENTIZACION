@@ -229,8 +229,8 @@ unicode-bidi: isolate;
 /* UADE FIN */
 
 nav {
-background: rgb(14,132,0);
-background: linear-gradient(90deg, rgba(14,132,0,1) 0%, rgba(19,186,55,1) 58%, rgba(97,233,126,1) 100%);
+  background: rgb(46,125,50);
+  background: linear-gradient(90deg, rgba(46,125,50,1) 0%, rgba(19,186,55,1) 57%, rgba(174,213,129,1) 100%);
 color: #fff;
 font-weight: 600;
 padding: 30px 0;
@@ -254,8 +254,8 @@ nav li a {  /*Determina la propiedad del texto del botón*/
 }
 
 nav li a:hover { /*Determina la propiedad al posicionarse en el botón*/
-  color: #084301;
-  background-color: #fff;
+  color: #2E7D32;
+  background-color: #AED581;
   transition: all .38s ease;
   border-radius: 50px;
 }
@@ -437,7 +437,7 @@ nav label { /*No muestra el valor de la etiqueta ☰*/
 }
 
 .button {
-  background-color: #0e8400;
+  background-color: #2E7D32;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -456,7 +456,7 @@ nav label { /*No muestra el valor de la etiqueta ☰*/
 }
 
 .button:hover {
-  background-color: #084301;
+  background-color: #AED581;
   transition: all 0.38s ease;
 }
 
