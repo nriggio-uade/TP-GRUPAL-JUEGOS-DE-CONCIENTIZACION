@@ -1,16 +1,17 @@
 body {
   font-family: sans-serif;
   position: relative;
-  min-height: 100vh; /* Usa vh (viewport height) para cubrir toda la altura de la ventana */
+  margin: 0;
+  min-height: 91.5vh; /* Usa vh (viewport height) para cubrir toda la altura de la ventana */
   display: flex;
   flex-direction: column;
+  padding-bottom: 90px; /*El alto del footer*/
 }
 
-/* UADE INICIO */
 * {
 margin: 0;
 padding: 0;
-box-sizing: border-box; /* Añadido para un mejor manejo de los márgenes y paddings */
+box-sizing: border-box; /* Añadido para un mejor manejo de los márgenes y paddings*/
 }
 
 section {
@@ -46,7 +47,7 @@ border: 1px solid #AED581; /* Añadido borde con color verde suave */
 .seccion-inicio {
   padding: 20px 10px;
   width: 90%; /* Ajuste de ancho responsivo */
-}
+  }
 }
 
 .datos-inicio {
@@ -111,7 +112,6 @@ display: block;
 unicode-bidi: isolate;
 }
 /* UADE FIN */
-
 
 nav {
 background: rgb(14,132,0);
