@@ -31,7 +31,7 @@ function startGame() {
     document.getElementById('message').textContent = '';
     document.getElementById('guess').value = '';
     document.getElementById('guess').disabled = false;
-    document.getElementById('hangmanImage').src = `img/ahorcado.jpg`;
+    document.getElementById('hangmanImage').src = `img/JuegoChristianOrtiz/ahorcado.jpg`;
 }
 
 function guessLetter() {
@@ -48,7 +48,7 @@ function guessLetter() {
             incorrectLetters.push(guess);
             document.getElementById('incorrect-letters').textContent = 'Letras incorrectas: ' + incorrectLetters.join(', ');
             mistakes++;
-            document.getElementById('hangmanImage').src = `img/ahorcado.jpg`;
+            document.getElementById('hangmanImage').src = `img/JuegoChristianOrtiz/ahorcado.jpg`;
             if (mistakes >= maxMistakes) {
                 document.getElementById('message').textContent = `Game Over! La palabra era "${selectedWord}".`;
                 disableInput();
