@@ -1,14 +1,82 @@
 html {
   width: 100%;
   height: 100%;
-  background: linear-gradient(325deg,  #03001e 0%,#7303c0 30%,#ec38bc 70%, #fdeff9 100%);
   font-family: Arial, Helvetica, sans-serif;
   overflow: hidden;
 }
+
+nav {
+  background: rgb(46,125,50);
+  background: linear-gradient(90deg, rgba(46,125,50,1) 0%, rgba(19,186,55,1) 57%, rgba(174,213,129,1) 100%);
+  color: #fff;
+  font-weight: 600;
+  padding: 30px 0;
+}
+
+nav ul { /*Muestra la disposicin de botones para notebook o desktop*/
+  display: flex; 
+  justify-content: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
+}
+
+nav li a {  /*Determina la propiedad del texto del botón*/ 
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover { /*Determina la propiedad al posicionarse en el botón*/
+  color: #2E7D32;
+  background-color: #AED581;
+  transition: all .38s ease;
+  border-radius: 50px;
+}
+
+nav label { /*No muestra el valor de la etiqueta ☰*/
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+body{
+    font-family: sans-serif;
+    position: relative;
+    margin: 0;
+    min-height: 91.5vh; /* Usa vh (viewport height) para cubrir toda la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 90px; /*El alto del footer*/
+  }
+
+  footer {
+    background: #0e8400; /* Color de fondo, ajusta al que prefieras */
+    color: white; /* Color de texto */
+    text-align: center; /* Alineación del texto */
+    padding: 20px 0; /* Espaciado superior e inferior para darle más espacio */
+    font-size: 16px; /* Tamaño de fuente */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    position: absolute;
+    bottom: 0; /* Asegura que el footer se mantenga al fondo */
+    left: 0;
+  }
+  
+  footer p {
+    margin: 0; /* Elimina el margen por defecto del párrafo */
+    line-height: 1.6; /* Espaciado entre líneas para mejorar la legibilidad */
+  }
+
 .game {
-  position: absolute;
+  position:absolute;
   top: 50%;
-  left: 70%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 .controls {
@@ -17,21 +85,21 @@ html {
   margin-bottom: 20px;
 }
 button {
-  background: #282A3A;
+  background: #2E7D32;
   color: #FFF;
-  border-radius: 5px;
-  padding: 10px 20px;
-  border: 0;
+  border-radius: 50px;
+  padding: 15px 32px;
+  border:none;
   cursor: pointer;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 18pt;
   font-weight: bold;
 }
+
 .disabled {
   color: #757575;
 }
 .stats {
-  color: #FFF;
+  color: #2E7D32;
   font-size: 14pt;
   font-weight: bold;
 }
@@ -42,7 +110,8 @@ button {
 .win {
   border-radius: 5px;
   box-shadow: 0 25px 50px rgb(33 33 33 / 25%);
-  background: linear-gradient(135deg,  #03001e 0%,#7303c0 0%,#ec38bc 50%, #fdeff9 100%);
+  background: rgb(46,125,50);
+  background: linear-gradient(90deg, rgba(46,125,50,1) 0%, rgba(19,186,55,1) 57%, rgba(174,213,129,1) 100%);
   transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
   backface-visibility: hidden;
 }
@@ -107,5 +176,5 @@ button {
   color: #282A3A;
 }
 .highlight {
-  color: #7303c0;
+  color: #2E7D32;
 }
