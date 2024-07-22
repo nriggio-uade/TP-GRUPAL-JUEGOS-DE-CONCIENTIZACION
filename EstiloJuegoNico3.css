@@ -55,10 +55,8 @@ nav label { /*No muestra el valor de la etiqueta ☰*/
   display: none;
 }
 
-@media (max-width: 768px) {/*cuando el dispositivo es máximo es de 768px*/
+@media (max-width: 1130px) {/*cuando el dispositivo es máximo es de 768px*/
   
-  /*MENÚ*/
-
     input:checked ~ ul{ /*muestra el contenido de todas las etiquetas ul*/
      display: block;
     }
