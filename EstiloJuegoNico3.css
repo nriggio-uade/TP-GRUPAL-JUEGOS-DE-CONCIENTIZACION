@@ -55,7 +55,7 @@ nav label { /*No muestra el valor de la etiqueta ☰*/
   display: none;
 }
 
-@media (max-width: 412px) {/*cuando el dispositivo es máximo es de 768px*/
+@media (max-width: 768px) {/*cuando el dispositivo es máximo es de 768px*/
   
   /*MENÚ*/
 
@@ -86,11 +86,11 @@ nav label { /*No muestra el valor de la etiqueta ☰*/
      /*background-color: cadetblue;*/
     }
     
-    nav ul{ /*deja de mostrar el bloque contenedor de botones horizontales*/
+    nav ul{/*deja de mostrar el bloque contenedor de botones horizontales*/
       display: none;
     }
     
-    nav ul li a{
+    nav ul li a{ /**/
      display: flex;
      text-decoration: none;
      color: #fff;
