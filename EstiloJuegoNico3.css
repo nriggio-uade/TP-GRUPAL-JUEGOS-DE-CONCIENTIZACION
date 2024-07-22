@@ -55,6 +55,48 @@ nav label { /*No muestra el valor de la etiqueta ☰*/
   display: none;
 }
 
+@media (max-width: 412px) {/*cuando el dispositivo es máximo es de 768px*/
+  
+  /*MENÚ*/
+
+    input:checked ~ ul{ /*muestra el contenido de todas las etiquetas ul*/
+     display: block;
+    }
+    
+    input:checked ~ label { /*muestra todo el contenido de las etiquetas label*/
+     background: #084301;
+    }
+    
+    nav li{ /*Determina la propiedad de cada botón para mobile*/
+     margin: 0;
+     text-align: left;
+    }
+    
+    nav label{ /*dibuja la etiqueta label ☰*/
+     box-sizing: border-box;
+     display: flex;
+     /*border-radius: 5px;*/
+     width: 30px;
+     height: 30px;
+     line-height: 30px;
+     font-weight: bold;
+     text-align: center;
+     justify-content: center;
+     user-select: none;
+     /*background-color: cadetblue;*/
+    }
+    
+    nav ul{ /*deja de mostrar el bloque contenedor de botones horizontales*/
+      display: none;
+    }
+    
+    nav ul li a{
+     display: flex;
+     text-decoration: none;
+     color: #fff;
+    }
+  }
+
 /* --------------------------> FIN NAV    <------------------------------------------------------*/
 
 /* -------------------------->  MAIN CONTENT  <------------------------------------------------------*/
@@ -97,11 +139,21 @@ nav label { /*No muestra el valor de la etiqueta ☰*/
   color: #333;
 }
   
-  @media (max-width: 1130px) {
+  @media (max-width: 763px) {
   .main-content {
     padding: 20px 10px;
-    width: 80%; /* Ajuste de ancho responsivo */
+    width: 100%; /* Ajuste de ancho responsivo */
+    display: flex;
+    flex-direction: column;
     }
+
+  .side-container-wrapper {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    vertical-align:middle;
+    padding: 20px;
+  } 
   }
 
 /* -------------------------->  FIN MAIN CONTENT  <------------------------------------------------------*/
@@ -116,13 +168,16 @@ nav label { /*No muestra el valor de la etiqueta ☰*/
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
   
-  
-  @media (max-width: 1130px) {
-  .game-content {
-    padding: 20px 10px;
-    width: 90%; /* Ajuste de ancho responsivo */
-    }
-  }
+@media (max-width: 763px) { 
+
+.game-content {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  vertical-align:middle;
+  margin-bottom: 30px;
+} 
+}
 
 
 .cards, .card, .view{
@@ -265,46 +320,3 @@ footer p {
 }
 /* FOOTER */
 
-/* <--------------------------------------RESPONSIVE-------------------------------------->*/
-
-@media (max-width: 768px) {/*cuando el dispositivo es máximo es de 768px*/
-  
-  /*MENÚ*/
-
-    input:checked ~ ul{ /*muestra el contenido de todas las etiquetas ul*/
-     display: block;
-    }
-    
-    input:checked ~ label { /*muestra todo el contenido de las etiquetas label*/
-     background: #084301;
-    }
-    
-    nav li{ /*Determina la propiedad de cada botón para mobile*/
-     margin: 0;
-     text-align: left;
-    }
-    
-    nav label{ /*dibuja la etiqueta label ☰*/
-     box-sizing: border-box;
-     display: flex;
-     /*border-radius: 5px;*/
-     width: 30px;
-     height: 30px;
-     line-height: 30px;
-     font-weight: bold;
-     text-align: center;
-     justify-content: center;
-     user-select: none;
-     /*background-color: cadetblue;*/
-    }
-    
-    nav ul{ /*deja de mostrar el bloque contenedor de botones horizontales*/
-      display: none;
-    }
-    
-    nav ul li a{
-     display: flex;
-     text-decoration: none;
-     color: #fff;
-    }
-  }
