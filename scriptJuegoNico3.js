@@ -23,6 +23,7 @@ function flipCard(e){
 }
 
 function matchCards(img1, img2){
+    movement++;
     if(img1 === img2){ //si 2 cards son iguales
         matchedCard++; //incremento el valor en 1
         if(matchedCard == 8) {
