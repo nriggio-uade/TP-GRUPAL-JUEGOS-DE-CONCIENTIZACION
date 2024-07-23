@@ -2,6 +2,7 @@ const cards = document.querySelectorAll(".card");
 
 let matchedCard = 0;
 let cardOne, cardTwo;
+let movement = 0;
 let disableDeck = false; //para evitar que el usuario clickee otras cards antes que se den vuelta las primeras 2
 
 
@@ -25,6 +26,7 @@ function matchCards(img1, img2){
     if(img1 === img2){ //si 2 cards son iguales
         matchedCard++; //incremento el valor en 1
         if(matchedCard == 8) {
+            alert("Ha ganado el Juego en "+movement+" movimientos!")
             setTimeout(() => {
                 return shuffleCard();
             }, 1000); //llama a reiniciar el juego despues de 5 segundos

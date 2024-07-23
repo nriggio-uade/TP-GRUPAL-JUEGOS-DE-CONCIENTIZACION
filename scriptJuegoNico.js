@@ -2,6 +2,7 @@ const cards = document.querySelectorAll(".card");
 
 let matchedCard = 0;
 let cardOne, cardTwo;
+let movement = 0;
 let disableDeck = false; //para evitar que el usuario clickee otras cards antes que se den vuelta las primeras 2
 
 
@@ -22,12 +23,14 @@ function flipCard(e){
 }
 
 function matchCards(img1, img2){
+    movement++;
     if(img1 === img2){ //si 2 cards son iguales
         matchedCard++; //incremento el valor en 1
         if(matchedCard == 8) {
+            alert("Ha ganado el Juego en "+movement+" movimientos!")
             setTimeout(() => {
                 return shuffleCard();
-            }, 1000); //llama a reiniciar el juego despues de 5 segundos
+            }, 5000); //llama a reiniciar el juego despues de 5 segundos
             
           }
         cardOne.removeEventListener("click", flipCard);
@@ -51,6 +54,7 @@ function matchCards(img1, img2){
 
 function shuffleCard(){ //reinicio el juego
     matchedCard = 0;
+    movement = 0;
     cardOne = cardTwo = "";
     let arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8]; //Creo un array con 8 valores repetidos 1 vez para crear los pares
     arr.sort(() => Math.random() > 0.5 ? 1 : -1); //ordeno la matriz de forma aleatoria

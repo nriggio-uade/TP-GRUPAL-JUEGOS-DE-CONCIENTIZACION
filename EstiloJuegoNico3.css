@@ -295,6 +295,11 @@ nav label { /*No muestra el valor de la etiqueta ☰*/
   .card .front-view img{
     width: 15px;
   }
+
+  .card .front-view span{
+    color: #2E7D32;
+  }
+
   .card .back-view img{
     max-width: 35px;
   }
