@@ -28,7 +28,7 @@ function matchCards(img1, img2){
         matchedCard++; //incremento el valor en 1
         
         if(matchedCard == 8) {
-            alert("Ganaste el Juego en "+ movement +" movimientos! Volvé a intentar para mejorar la cantidad de movimientos y tu memoria...y tampoco olvides lo importante que es reducir el consumo de energía no renovable!!!")
+            alert("Ganaste el Juego en "+ movement +" movimientos! Volvé a intentar para mejorar la cantidad de movimientos y tu memoria...y tampoco olvides lo importante que es reducir el consumo de energía no renovable    !!!")
             setTimeout(() => {
                 return shuffleCard();
             }, 1000); //llama a reiniciar el juego despues de 5 segundos
