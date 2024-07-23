@@ -26,8 +26,9 @@ function matchCards(img1, img2){
     movement++;
     if(img1 === img2){ //si 2 cards son iguales
         matchedCard++; //incremento el valor en 1
+        
         if(matchedCard == 8) {
-            alert("Ha ganado el Juego en "+movement+" movimientos!")
+            alert("Ha ganado el Juego en "+ movement +" movimientos!")
             setTimeout(() => {
                 return shuffleCard();
             }, 1000); //llama a reiniciar el juego despues de 5 segundos
